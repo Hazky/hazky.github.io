@@ -1,1 +1,1 @@
-# http://hazky.github.io
+# http://hazky.github.io - Lincior do strony

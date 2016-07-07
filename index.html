@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-	<title>Lorem Ipsum</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SupportDevs</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<meta name="description" content="Lorem ipsum dolor sit amet...">
 	<meta name="keywords" content="tag1,tag2,tag3,tag4">
 	<meta name="author" content="Webiste Author">
+  <!-- Skrypty -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+       $('#gmap').addClass('scrolloff'); 
+      $('#google-maps').on('click', function () {
+          $('#gmap').removeClass('scrolloff');
+      });
+       $('#gmap').mouseleave(function () {
+        $('#gmap').addClass('scrolloff'); 
+      });
+    });
+    $('.carousel').carousel({
+      interval: 6000
+    });
+    </script>
+  <!-- Reszta bibliotek -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+ <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!--Hamburger start-->
       <div class="navbar-header">
@@ -30,7 +48,7 @@
       </div>
 
       <div class="collapse navbar-collapse" id="nav-collapse">
-        <ul class="nav navbar-nav pull-right">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Innowacje</a></li>
           <li><a href="#">Opinie</a></li>
           <li><a href="#">Kontakt</a></li>
