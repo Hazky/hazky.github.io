@@ -20,13 +20,12 @@
       };
       var map = new google.maps.Map(document.getElementById("googleMap"), mapProperties);
 
-      map.addListener('click', function(){
-        if (map) map.setOptions({scrollwheel: true});
+      $("#googleMap").mouseenter(function(){
+      	mapProperties.setOptions({scrollwheel: false});
       });
-
-      map.addListener('mouseout', function(){
-        if (map) map.setOptions({scrollwheel: false})
-      })
+      $("#googleMap").click(function(){
+      	mapProperties.setOptions({scrollwheel: true})
+      });
     }
 
     google.maps.event.addDomListener(window, 'load', init);
