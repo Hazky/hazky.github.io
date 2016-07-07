@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-	<title>Lorem Ipsum</title>
+	<title>SupportDevs</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 	<meta name="description" content="Lorem ipsum dolor sit amet...">
@@ -12,17 +12,12 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
-
-      // you want to enable the pointer events only on click;
-
-       $('#gmap').addClass('scrolloff'); // set the pointer events to none on doc ready
+       $('#gmap').addClass('scrolloff'); 
       $('#google-maps').on('click', function () {
-          $('#gmap').removeClass('scrolloff'); // set the pointer events true on click
+          $('#gmap').removeClass('scrolloff');
       });
-
-      // you want to disable pointer events when the mouse leave the canvas area;
        $('#gmap').mouseleave(function () {
-        $('#gmap').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+        $('#gmap').addClass('scrolloff'); 
       });
     });
     $('.carousel').carousel({
@@ -38,7 +33,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
+ <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!--Hamburger start-->
       <div class="navbar-header">
@@ -53,7 +48,7 @@
       </div>
 
       <div class="collapse navbar-collapse" id="nav-collapse">
-        <ul class="nav navbar-nav pull-right">
+        <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Innowacje</a></li>
           <li><a href="#">Opinie</a></li>
           <li><a href="#">Kontakt</a></li>
