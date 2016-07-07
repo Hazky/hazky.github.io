@@ -19,33 +19,8 @@
         mapTypeId:google.maps.MapTypeId.ROADMAP,
       };
       var map = new google.maps.Map(document.getElementById("googleMap"), mapProperties);
-    }
+    };
     google.maps.event.addDomListener(window, 'load', init);
-    
-    // map is the google maps object, '#map' is the jquery selector
-preventAccidentalZoom(map, '#map'); 
-
-// Disables and enables scroll to zoom as appropriate. Also
-// gives the user a UI cue as to when scrolling is enabled.
-function preventAccidentalZoom(map, mapSelector){
-  var mapElement = $(mapSelector);
-
-  // Disable the scroll wheel by default
-  map.setOptions({ scrollwheel: false })
-
-  // Enable scroll to zoom when there is a mouse down on the map.
-  // This allows for a click and drag to also enable the map
-  mapElement.on('mousedown', function () {
-    map.setOptions({ scrollwheel: true });
-    mapElement.css('border', '1px solid blue')
-  });
-
-  // Disable scroll to zoom when the mouse leaves the map.
-  mapElement.mouseleave(function () {
-    map.setOptions({ scrollwheel: false })
-    mapElement.css('border', 'none')
-  });
-};
   </script>
   <!-- Reszta bibliotek -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
