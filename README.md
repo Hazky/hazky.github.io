@@ -1,1 +1,1 @@
-# hazky.github.io
+# http://hazky.github.io
