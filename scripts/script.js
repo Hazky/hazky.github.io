@@ -18,9 +18,9 @@
 
   google.maps.event.addDomListener(window, 'load', init);
 
-//Smooth scroll po kliknięciu na odnośnik w navbarze
-/*$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
+//\\Smooth scroll po kliknięciu na odnośnik w navbarze
+$(function() {
+  $('.navlink:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -33,7 +33,7 @@
     }
   });
 });
-*/
+
 //Podświetlenie aktywnego elementu w navbarze
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
