@@ -1,5 +1,5 @@
 body{
-	font-family: PlayFair;
+	font-family: PlayFair, Helvetica;
 }
 
 blockquote{
@@ -15,7 +15,7 @@ body .standouts{
 	background-attachment: fixed;
 	padding: 100px;
 	color: white;
-	text-shadow: 1px 1px 2px black;
+	text-shadow: 1px 1px 3px black;
 }
 
 body .standouts i{
