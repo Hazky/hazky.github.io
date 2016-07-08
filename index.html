@@ -11,26 +11,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB048UodvixPGjb4fAceqknYyLY8pycX_Y"></script>
-  <script>
-    function init() {
-      var mapProperties = {
-        center:new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 16, 
-        mapTypeId:google.maps.MapTypeId.ROADMAP,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProperties);
-
-      map.addListener('click', function(){
-        if (map) map.setOptions({scrollwheel: true});
-      });
-
-      map.addListener('mouseout', function(){
-        if (map) map.setOptions({scrollwheel: false})
-      })
-    }
-
-    google.maps.event.addDomListener(window, 'load', init);
-  </script>
+  <script src="scripts/script.js"></script>
   <!-- Reszta bibliotek -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
@@ -56,10 +37,10 @@
 
       <div class="collapse navbar-collapse" id="nav-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Innowacje</a></li>
-          <li><a href="#">Opinie</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#1">Innowacje</a></li>
+          <li><a href="#2">Opinie</a></li>
+          <li><a href="#3">Kontakt</a></li>
+          <li><a href="#4">Blog</a></li>
         </ul>
       </div>
       <!-- Container fluid -->
@@ -81,6 +62,7 @@
 
   <section class="standouts">
     <div class="container text-center">
+      <a name="1"></a>
       <h1>Co nas wyróżnia?</h1>
       <div class="row">
         <div class="col-md-4">
@@ -105,6 +87,7 @@
     <div class="container text-center">
       <div class="col-md-12">
         <blockquote>
+          <a name="2"></a>
           <p>Tu będzie cytat?</p>
         </blockquote>
       </div>
@@ -114,6 +97,7 @@
     <div class="container text-center">
       <h1>Kontakt</h1>
       <div class="row">
+        <a name="3"></a>
         <div class="col-md-4">
           <h3>Marek Heintzel</h3>
         </div>
@@ -134,6 +118,7 @@
           <h2>Jeszcze niezdecydowany?</h2>
         </div>
         <div class="col-md-6">
+          <a name="4"></a>
           <a class="button-link" href="#">Poczytaj naszego Bloga</a>
         </div>
       </div>
