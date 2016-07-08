@@ -1,5 +1,5 @@
 body{
-	font-family: PlayFair, Arial, Sans-serif;
+	font-family: PlayFair;
 }
 
 blockquote{
@@ -7,7 +7,8 @@ blockquote{
 }
 
 body .standouts{
-	background-image: url("http://i.imgur.com/jW6UCkk.jpg");
+	background-image: url("http://i.imgur.com/3geFJ4D.png");
+	background-attachment: fixed;
 	padding: 100px;
 	color: white;
 	text-shadow: 1px 1px 2px black;
@@ -18,11 +19,16 @@ body .quote{
 }
 
 body .contact{
-	background-image: url("http://i.imgur.com/xB8rPSV.jpg");
+	background-image: url("http://i.imgur.com/kgLwTsh.jpg");
 	background-position: center;
+	background-attachment: fixed;
 	padding: 100px;
 	color: white;
-	text-shadow: 1px 1px 2px black;
+	text-shadow: 2px 2px 2px black;
+}
+
+body .encourager{
+	padding: 100px;
 }
 
 .vertical-center{
@@ -33,10 +39,10 @@ body .contact{
 }
 
 .button-link{
-	border: solid blue 1px;
+	border: solid gray 1px;
 	border-radius: 15px;
 	padding: 0.5em;
-	color: blue;
+	color: gray;
 	-moz-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 	position: relative;
@@ -44,7 +50,7 @@ body .contact{
 }
 
 .button-link:hover{
-	background-color: blue;
+	background-color: gray;
 	color: white;
 	text-decoration: none;
 };
