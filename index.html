@@ -10,20 +10,27 @@
   <!-- Skrypty -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function () {
-       $('#gmap').addClass('scrolloff'); 
-      $('#google-maps').on('click', function () {
-          $('#gmap').removeClass('scrolloff');
+  <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB048UodvixPGjb4fAceqknYyLY8pycX_Y"></script>
+  <script>
+    function init() {
+      var mapProperties = {
+        center:new google.maps.LatLng(51.508742, -0.120850),
+        zoom: 16, 
+        mapTypeId:google.maps.MapTypeId.ROADMAP,
+      };
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapProperties);
+
+      map.addListener('click', function(){
+        if (map) map.setOptions({scrollwheel: true});
       });
-       $('#gmap').mouseleave(function () {
-        $('#gmap').addClass('scrolloff'); 
-      });
-    });
-    $('.carousel').carousel({
-      interval: 6000
-    });
-    </script>
+
+      map.addListener('mouseout', function(){
+        if (map) map.setOptions({scrollwheel: false})
+      })
+    }
+
+    google.maps.event.addDomListener(window, 'load', init);
+  </script>
   <!-- Reszta bibliotek -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
@@ -135,9 +142,8 @@
 
    <section class="map"> <!-- Nie działa tak jak powinno, do zrobienia -->
     <div class="container-fluid text-center">
-      <div class="row google-maps">
-        <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD5R-QstMCXKqDM2_6B_uJ-1bx7hp1e2L4&q=Space+Needle,Seattle+WA" id="gmap">
-        </iframe>
+      <div class="row">
+        <div id="googleMap" style="width: 100%; height:380px;"></div>
       </div>
     </div>
   </section>
