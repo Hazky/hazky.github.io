@@ -7,6 +7,20 @@ blockquote{
 	border: 0;
 }
 
+.carousel-indicators li {
+  background-color: #fff;
+  border:1px solid #444;
+}
+
+.carousel-indicators .active {
+  background-color: #444;
+
+}
+
+ span.icon-prev, span.icon-next{
+	color: #000;
+ }
+
 body .slider{
 	background-color: #F3F5F6;
 }
@@ -84,3 +98,4 @@ body .encourager{
 	color: white;
 	text-decoration: none;
 };
+
