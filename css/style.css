@@ -6,6 +6,10 @@ blockquote{
 	border: 0;
 }
 
+body .slider p{
+	font-size: 1.25em;
+}
+
 body .standouts{
 	background-image: url("http://i.imgur.com/3geFJ4D.png");
 	background-attachment: fixed;
