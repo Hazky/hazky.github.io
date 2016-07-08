@@ -19,7 +19,7 @@
   google.maps.event.addDomListener(window, 'load', init);
 
 //Smooth scroll po kliknięciu na odnośnik w navbarze
-$(function() {
+/*$(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -33,7 +33,7 @@ $(function() {
     }
   });
 });
-
+*/
 //Podświetlenie aktywnego elementu w navbarze
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
