@@ -1,4 +1,4 @@
-  /*Mapa*/
+  //Mapa
   function init() {
     var mapProperties = {
       center:new google.maps.LatLng(51.508742, -0.120850),
@@ -18,7 +18,7 @@
 
   google.maps.event.addDomListener(window, 'load', init);
 
-/*Smooth scroll po kliknięciu na odnośnik w navbarze*/
+//Smooth scroll po kliknięciu na odnośnik w navbarze
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -34,7 +34,7 @@ $(function() {
   });
 });
 
-/*Podświetlenie aktywnego elementu w navbarze*/
+//Podświetlenie aktywnego elementu w navbarze
 $(".nav a").on("click", function(){
    $(".nav").find(".active").removeClass("active");
    $(this).parent().addClass("active");
