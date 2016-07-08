@@ -6,6 +6,25 @@ blockquote{
 	border: 0;
 }
 
+body .standouts{
+	background-image: url("http://i.imgur.com/jW6UCkk.jpg");
+	padding: 100px;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
+body .quote{
+	padding: 100px;
+}
+
+body .contact{
+	background-image: url("http://i.imgur.com/xB8rPSV.jpg");
+	background-position: center;
+	padding: 100px;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}
+
 .vertical-center{
 	min-height: 100%;
 	min-height: 100vh;
