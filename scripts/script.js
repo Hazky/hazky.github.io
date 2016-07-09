@@ -11,7 +11,7 @@
       if (map) map.setOptions({scrollwheel: true});
     });
 
-    map.addListener('mouseout', function(){
+    map.addListener('mouseover', function(){
       if (map) map.setOptions({scrollwheel: false})
     })
   }

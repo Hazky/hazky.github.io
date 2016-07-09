@@ -8,10 +8,10 @@
 	<meta name="keywords" content="tag1,tag2,tag3,tag4">
 	<meta name="author" content="Webiste Author">
   <!-- Skrypty -->
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script async src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB048UodvixPGjb4fAceqknYyLY8pycX_Y"></script>
-  <script src="scripts/script.js"></script>
+  <script async src="scripts/script.js"></script>
   <!-- Reszta bibliotek -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
@@ -55,6 +55,7 @@
   			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
   			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
   			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
 		</ol>
 		<div class="carousel-inner">
 		    
@@ -76,12 +77,12 @@
 			    <div class="container">
 			      <div class="row vertical-center">
 			        <div class="col-md-6">
-			          <h1>Pracuj z nami</h1>
-			          <p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.Grumpy wizards make toxic brew for the evil Queen and Jack.Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
-			          <a class="button-link" href="#">Poczytaj naszego Bloga</a>
+			          <h1>Spełniamy oczekiwania klientów</h1>
+			          <p>Dla klientów przygotowujemy ofertę indywidualną w taki sposób, aby efekt końcowy był zgodny z oczekiwaniami.</p>
+			          <a class="button-link" href="#">Sprawdź nas</a>
 			        </div>
 			        <div class="col-md-6">
-			          <img class="img-responsive" src="https://raw.githubusercontent.com/Hazky/hazky.github.io/master/images/slide-join-us.png">
+			          <img class="img-responsive" src="images/logo.png">
 			        </div>
 			      </div>
 			    </div>
@@ -90,16 +91,32 @@
 			    <div class="container">
 			      <div class="row vertical-center">
 			        <div class="col-md-6">
-			          <h1>Pracuj z nami</h1>
-			          <p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.Grumpy wizards make toxic brew for the evil Queen and Jack.Grumpy wizards make toxic brew for the evil Queen and Jack.</p>
-			          <a class="button-link" href="#">Poczytaj naszego Bloga</a>
+			          <h1>Pracujemy w nowoczesnych technologiach</h1>
+			          <p>Zespół SupportDevs został skompletowany tak, żeby móc podołać w większości wykorzystywanych dzisiaj technologii. HTML5, CSS3, JavaScript, Bootstrap, Java, jQuery, PHP, C++ i inne nie mają przed nami tajemnic. </p>
+			          <a class="button-link" href="#">Sprawdź sam</a>
 			        </div>
 			        <div class="col-md-6">
-			          <img class="img-responsive" src="https://raw.githubusercontent.com/Hazky/hazky.github.io/master/images/slide-join-us.png">
+                <!-- W tej kolumnie powinny być ikony wszystkich technologii. Można to zrobić na parę sposobów. Albo zrobić nowego rowa
+                i wkleić do niego col-md-3 parę razy i w każdym dać osobną ikonę albo zrobić to w tym colu. Mamy devicons zaimportowane, ale one mi się 
+                źle skalują. -->
 			        </div>
 			      </div>
 			    </div>
 	  		</div>
+        <div class="item">
+          <div class="container">
+            <div class="row vertical-center">
+              <div class="col-md-6">
+                <h1>Tworzymy to w ten sposób</h1>
+                <p>Grumpy wizards make toxic brew for the evil Queen and Jack. Grumpy wizards make toxic brew for the evil Queen and Jack.Grumpy wizards make toxic brew for the evil Queen and Jack.Grumpy wizards make toxic brew for the evil Queen and Jack. </p>
+                <a class="button-link" href="#">Sprawdź sam</a>
+              </div>
+              <div class="col-md-6">
+                <img class="img-responsive" src="images/logo.png">
+              </div>
+            </div>
+          </div>
+        </div>
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
   				<span class="icon-prev"></span>
 			</a>
@@ -133,9 +150,9 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
-      <!-- Row close -->
+
     </div>
-    <!-- Container close -->
+
   </section>
 	<a name="2"></a>
   <section class="quote">
@@ -209,16 +226,16 @@
         </div>
         <div class="col-md-4">
           <h3>Poczytaj o nas</h3>
-          <p><a><i class="fa fa-facebook"></i> Facebook</a></p>
-          <p><a><i class="fa fa-twitter"></i> Twitter</a></p>
-          <p><a><i class="fa fa-desktop"></i> Blog</a></p>
+          <p><a href="#"><i class="fa fa-facebook"></i> Facebook</a></p>
+          <p><a href="#"><i class="fa fa-twitter"></i> Twitter</a></p>
+          <p><a href="#"><i class="fa fa-desktop"></i> Blog</a></p>
         </div>
         <div class="col-md-4">
           <h3>O nas</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
         <div class="col-md-12">
-          <p class="italic">(c) by SupportDevs</p>
+          <p style="font-style: italic;">(c) by SupportDevs 2016</p>
         </div>
       </div>
     </div>
