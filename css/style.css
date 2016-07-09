@@ -21,11 +21,17 @@ span.icon-prev, span.icon-next{
 	color: #000;
  }
 
+ i.img-standouts{
+ 	 transition: all 0.5s ease 0s;
+  	-moz-transition: all 0.5s ease 0s;
+ }
+
+
  i.img-standouts:hover{
 	background-color: white;
 	opacity: 0.5;
 	color: black;
-  	transition: all 0.5s ease-in-out;
+
 }
 
 body .slider{
@@ -60,6 +66,10 @@ body .quote{
 	background-color: #F3F5F6;
 }
 
+body .quote i{
+	padding-bottom: 30px;
+}
+
 body .contact{
 	background-image: url("http://i.imgur.com/kgLwTsh.jpg");
 	background-position: center;
@@ -80,6 +90,22 @@ body .contact h1{
 body .encourager{
 	padding: 50px;
 	background-color: #F3F5F6;
+}
+
+body footer{
+	background-color: #F3F5F6;
+}
+
+body footer a{
+	color: orange;
+	transition: all 0.5s ease 0s;
+  	-moz-transition: all 0.5s ease 0s;
+
+}
+
+body footer a:hover{
+	color: gray;
+	text-decoration: none;
 }
 
 .vertical-center{
