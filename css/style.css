@@ -3,6 +3,10 @@ body{
 	color: #506062;
 }
 
+body h1{
+	font-size: 3.5em;
+}
+
 blockquote{
 	border: 0;
 }
