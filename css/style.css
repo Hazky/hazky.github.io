@@ -3,10 +3,6 @@ body{
 	color: #506062;
 }
 
-body h1{
-	font-size: 3.5em;
-}
-
 blockquote{
 	border: 0;
 }
@@ -26,16 +22,13 @@ span.icon-prev, span.icon-next{
  }
 
  i.img-standouts{
- 	 transition: all 0.5s ease 0s;
-  	-moz-transition: all 0.5s ease 0s;
+ 	transition-duration: 0.5s;
  }
-
 
  i.img-standouts:hover{
 	background-color: white;
 	opacity: 0.5;
 	color: black;
-
 }
 
 body .slider{
@@ -68,20 +61,14 @@ body .standouts h1{
 body .quote{
 	padding: 50px;
 	background-color: #F3F5F6;
-	transition: all 0.5s ease 0s;
-  	-moz-transition: all 0.5s ease 0s;
-}
-
-body .quote i{
-	padding-bottom: 30px;
+	transition-duration: 0.5s;
 }
 
 body .quote:hover{
 	color: white;
 	background-color: #484949;
-	
 
- }
+}
 
 body .contact{
 	background-image: url("http://i.imgur.com/kgLwTsh.jpg");
@@ -103,22 +90,6 @@ body .contact h1{
 body .encourager{
 	padding: 50px;
 	background-color: #F3F5F6;
-}
-
-body footer{
-	background-color: #F3F5F6;
-}
-
-body footer a{
-	color: orange;
-	transition: all 0.5s ease 0s;
-  	-moz-transition: all 0.5s ease 0s;
-
-}
-
-body footer a:hover{
-	color: gray;
-	text-decoration: none;
 }
 
 .vertical-center{
