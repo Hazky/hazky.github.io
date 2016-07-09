@@ -18,7 +18,7 @@
 
   google.maps.event.addDomListener(window, 'load', init);
 
-//\\Smooth scroll po kliknięciu na odnośnik w navbarze
+//Smooth scroll po kliknięciu na odnośnik w navbarze
 $(function() {
   $('.navlink:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
