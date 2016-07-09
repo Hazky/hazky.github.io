@@ -21,11 +21,14 @@ span.icon-prev, span.icon-next{
 	color: #000;
  }
 
+ i.img-standouts{
+ 	transition-duration: 0.5s;
+ }
+
  i.img-standouts:hover{
 	background-color: white;
 	opacity: 0.5;
 	color: black;
-  	transition: all 0.5s ease-in-out;
 }
 
 body .slider{
@@ -58,6 +61,13 @@ body .standouts h1{
 body .quote{
 	padding: 50px;
 	background-color: #F3F5F6;
+	transition-duration: 0.5s;
+}
+
+body .quote:hover{
+	color: white;
+	background-color: #484949;
+
 }
 
 body .contact{
