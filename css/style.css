@@ -72,8 +72,8 @@ body .quote i{
 	padding-bottom: 30px;
 }
 
- +body .quote:hover{
-+	color: white;
+body .quote:hover{
+	color: white;
 	background-color: #484949;
 	
 
