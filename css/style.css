@@ -1,6 +1,6 @@
 body{
-	font-family: PlayFair, Helvetica;
-	color: #506062;
+    	color: #506062;
+	font-family: PlayFair, Helvetica, sans-serif;
 }
 
 body h1{
@@ -21,21 +21,22 @@ blockquote{
 
 }
 
-span.icon-prev, span.icon-next{
+.icon-prev, .icon-next{
 	color: #000;
  }
 
  i.img-standouts{
- 	 transition: all 0.5s ease 0s;
   	-moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
  }
 
 
  i.img-standouts:hover{
 	background-color: white;
+    color: black;
 	opacity: 0.5;
-	color: black;
-
 }
 
 body .slider{
@@ -47,18 +48,18 @@ body .slider p{
 }
 
 body .standouts{
+    background-attachment: fixed;
 	background-image: url("http://i.imgur.com/3geFJ4D.png");
-	background-attachment: fixed;
+    color: white;
 	padding: 100px;
-	color: white;
 	text-shadow: 1px 1px 3px black;
 }
 
 body .standouts i{
 	border: solid white 1px;
 	border-radius: 50%;
+    box-shadow: 1px 1px 3px black;
 	padding: 25px;
-	box-shadow: 1px 1px 3px black;
 }
 
 body .standouts h1{
@@ -66,10 +67,12 @@ body .standouts h1{
 }
 
 body .quote{
+    background-color: #F3F5F6;
 	padding: 50px;
-	background-color: #F3F5F6;
-	transition: all 0.5s ease 0s;
   	-moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 body .quote i{
@@ -77,18 +80,16 @@ body .quote i{
 }
 
 body .quote:hover{
+    background-color: #484949;
 	color: white;
-	background-color: #484949;
-	
-
  }
 
 body .contact{
+    background-attachment: fixed;
 	background-image: url("http://i.imgur.com/kgLwTsh.jpg");
 	background-position: center;
-	background-attachment: fixed;
+    color: white;
 	padding: 100px;
-	color: white;
 	text-shadow: 2px 2px 2px black;
 }
 
@@ -101,8 +102,8 @@ body .contact h1{
 }
 
 body .encourager{
+    background-color: #F3F5F6;
 	padding: 50px;
-	background-color: #F3F5F6;
 }
 
 body footer{
@@ -111,8 +112,10 @@ body footer{
 
 body footer a{
 	color: orange;
-	transition: all 0.5s ease 0s;
   	-moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 
 }
 
@@ -122,26 +125,28 @@ body footer a:hover{
 }
 
 .vertical-center{
+    align-items: center;
+    display: flex;
 	min-height: 100%;
 	min-height: 100vh;
-	display: flex;
-	align-items: center;
 }
 
 .button-link{
 	border: solid gray 1px;
 	border-radius: 15px;
+    color: gray;
 	padding: 0.5em;
-	color: gray;
+    position: relative;
+    top: 25px;
 	-moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	position: relative;
-	top: 25px;
 }
 
 .button-link:hover{
 	background-color: gray;
 	color: white;
 	text-decoration: none;
-};
+}
 
