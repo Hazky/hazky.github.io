@@ -50,9 +50,9 @@ body .slider p{
 body .standouts{
     background-attachment: fixed;
 	background-image: url("http://i.imgur.com/3geFJ4D.png");
-    color: white;
+    color: ghostwhite;
 	padding: 100px;
-	text-shadow: 1px 1px 3px black;
+	text-shadow: 1px 1px 1px black;
 }
 
 body .standouts i{
